@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,12 +16,12 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: NetworkImage(
                     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzREid4877Gelj4m0eAwnBQTop6l2wq54UQw&usqp=CAU'),
               ),
-              Text(
+              const Text(
                 'onyedire jesse',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
@@ -39,15 +39,16 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal[100]),
               ),
               SizedBox(
+                width: 250,
+                height: 20,
                 child: Divider(
                   height: 15,
                   color: Colors.teal[400],
                 ),
-                width: 250,
-                height: 20,
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                 color: Colors.white,
                 child: Padding(
                     padding: const EdgeInsets.all(10.0),
@@ -63,7 +64,7 @@ class MyApp extends StatelessWidget {
                     )),
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 16),
+                margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 16),
                 color: Colors.white,
                 child: Padding(
                     padding: const EdgeInsets.all(10.0),
