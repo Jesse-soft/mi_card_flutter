@@ -1,4 +1,3 @@
-# flutter-mi-card-project
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +13,8 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column( mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50,
@@ -32,11 +32,16 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'FLUTTER DEVELOPER',
-                style: TextStyle(fontSize: 15, fontStyle: FontStyle.normal,fontWeight: FontWeight.bold,color: Colors.teal[100]),
+                style: TextStyle(
+                    fontSize: 15,
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.teal[100]),
               ),
               SizedBox(
                 child: Divider(
-                  height: 15,color: Colors.teal[400],
+                  height: 15,
+                  color: Colors.teal[400],
                 ),
                 width: 250,
                 height: 20,
@@ -45,28 +50,33 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                 color: Colors.white,
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ListTile(
-                    leading: Icon( Icons.phone,
-                        color: Colors.teal[900],),
-                        title:Text(
+                    padding: const EdgeInsets.all(10.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.phone,
+                        color: Colors.teal[900],
+                      ),
+                      title: Text(
                         '+234-8070451885',
                         style: TextStyle(fontSize: 16, color: Colors.teal[900]),
-                      ), 
-                  ) 
-                ),
+                      ),
+                    )),
               ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 5, horizontal: 16),
                 color: Colors.white,
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child:ListTile(
-                    leading: Icon(Icons.email,color: Colors.teal[900],),
-                    title: Text('onyedirejesse@gmail.com',
-                    style: TextStyle(color: Colors.teal[900],fontSize: 16),),
-                  )
-                ),
+                    padding: const EdgeInsets.all(10.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        color: Colors.teal[900],
+                      ),
+                      title: Text(
+                        'onyedirejesse@gmail.com',
+                        style: TextStyle(color: Colors.teal[900], fontSize: 16),
+                      ),
+                    )),
               ),
             ],
           ),
